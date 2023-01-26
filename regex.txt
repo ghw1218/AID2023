@@ -1,0 +1,47 @@
+1.什么是git
+    git 是一个开源的分布式版本控制系统,用于高校的管理各种大小项目和文件
+
+2.代码管理工具的用途
+    *防止代码丢失,做备份
+    *项目的版本管理和控制,可以通过设置节点进行跳转
+    *建立各自的开发环境分支,互不影响,方便合并
+    *在多终端开发是,方便代码的相互传输
+
+3.git的特点
+    *git是开源的,多在linux下使用,可以管理各种文件
+    *git是分布式的项目管理工具(svn是集中式的)
+    *git数据管理更多样化,分享速度快,数据安全
+    *git拥有更好的分支支持,方便多人协调
+
+git使用
+    基本概念 每建立一个 都会分为一下4个分布
+
+          workspace 工作区:项目所在操作目录,实际操作项目的取余
+本地       index 暂存区:记录 用于记录工作区的工作(修改)内容
+          Repository 仓库区: 备份 用于备份工作区的内容
+网络       Remote 远程仓库区: 远程主机上的GIT仓库
+
+初始配置
+    配置命令; git config
+        *配置所有用户:git config -- system[选项]
+
+    配置邮箱:
+           * 管理员权限linux下是 sudo git config --system user.name Tedu
+           * git config --global user.email pand@tedu.cn
+
+            初始化git仓库 git init
+            查看所有配置信息 git config -- list
+             cat .gitconfig
+
+    配置编译器:
+            git config core.editor pycharm
+
+
+    配置文件位置; /etc/gitconfig
+        *配置当前用户: git config --global[选项]
+
+    配置文件位置; ~/.gitconfig
+        *配置当前项目;git config[选项]
+
+    配置文件位置; project/.git/config
+
